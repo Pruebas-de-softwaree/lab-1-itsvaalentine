@@ -37,10 +37,16 @@ if __name__ == "__main__":
 
 
 
-    for i in range(266):
+    for i in range(1000):
         user_manager.add_user(i, f"User{i}")
     
     print("end")
+
+    actual_time = time.time()
+    print("Start finding user at:", actual_time)
+    user_manager.find_user(500)
+    print("User found:", find_user(500))
+    print("Finding user took:", time.time() - actual_time, "seconds")
 
 
 
@@ -51,8 +57,8 @@ if __name__ == "__main__":
     #     print("User found:", i)
     # print("end")
 
-    user_manager.average_user_id()
-    print("Average user ID:", average_user_id())
+    # user_manager.average_user_id()
+    # print("Average user ID:", average_user_id())
 
     # for i in range(266):
     #     user_manager.delete_user(i)
