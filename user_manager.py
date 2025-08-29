@@ -31,23 +31,22 @@ if __name__ == "__main__":
     user_manager = UserManager()
     add_user = user_manager.add_user
     get_all_names = user_manager.get_all_names
+    find_user = user_manager.find_user
+    delete_user = user_manager.delete_user
+    average_user_id = user_manager.average_user_id
+
+
 
     for i in range(266):
         user_manager.add_user(i, f"User{i}")
     
     print("end")
-    # print("Average user ID:", user_manager.average_user_id())
-    # Simulate adding users
-    # Uncomment the following lines to test adding users
 
 
-        
+    for i in range(266):
+        user_manager.find_user(i)
+        time.sleep(0.01)
+        print("User found:", i)
+    print("end")
 
-    
-    # add_user(1, "Alice")
-    # add_user(2, "Bob")
-    # add_user(3, "Charlie")
-    # add_user(4, "David")
-    # add_user(5, "Eve") ``
 
-    # print("All user IDs:", get_all_names())
