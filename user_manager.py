@@ -42,11 +42,19 @@ if __name__ == "__main__":
     
     print("end")
 
-    actual_time = time.time()
-    print("Start finding user at:", actual_time)
-    user_manager.find_user(500)
-    print("User found:", find_user(500))
-    print("Finding user took:", time.time() - actual_time, "seconds")
+    # user_manager.average_user_id()
+    # print("Average user ID:", average_user_id())
+
+    # user_manager.delete_user(1003)
+    # print("User deleted:", 1003)
+
+    # actual_time = time.time()
+    # print("Start finding user at:", actual_time)
+    # user_manager.find_user(500)
+    # print("User found:", find_user(500))
+    # print("Finding user took:", time.time() - actual_time, "seconds")
+
+
 
 
 
