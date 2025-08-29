@@ -27,3 +27,27 @@ class UserManager:
 
 
 if __name__ == "__main__":
+
+    user_manager = UserManager()
+    add_user = user_manager.add_user
+    get_all_names = user_manager.get_all_names
+
+    for i in range(266):
+        user_manager.add_user(i, f"User{i}")
+    
+    print("end")
+    # print("Average user ID:", user_manager.average_user_id())
+    # Simulate adding users
+    # Uncomment the following lines to test adding users
+
+
+        
+
+    
+    # add_user(1, "Alice")
+    # add_user(2, "Bob")
+    # add_user(3, "Charlie")
+    # add_user(4, "David")
+    # add_user(5, "Eve") ``
+
+    # print("All user IDs:", get_all_names())
