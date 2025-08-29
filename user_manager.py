@@ -51,12 +51,9 @@ if __name__ == "__main__":
     #     print("User found:", i)
     # print("end")
 
+    user_manager.average_user_id()
+    print("Average user ID:", average_user_id())
 
-    for i in range(266):
-        user_manager.get_all_names()
-        time.sleep(0.01)
-        print("All users:", get_all_names())
-    print("end")
     # for i in range(266):
     #     user_manager.delete_user(i)
     #     time.sleep(0.01)
